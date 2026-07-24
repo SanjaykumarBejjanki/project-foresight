@@ -10,6 +10,16 @@ The system will forecast weekly SKU-level demand, identify stockout and
 overstock risks, calculate financial impact, and recommend inventory actions
 through an interactive dashboard.
 
+## Live Application
+
+🔗 https://your-streamlit-app.streamlit.app
+
+---
+
+## GitHub Repository
+
+🔗 https://github.com/SanjaykumarBejjanki/project-foresight
+
 ## Business Problem
 
 Businesses frequently face two inventory problems:
@@ -28,6 +38,19 @@ Businesses frequently face two inventory problems:
 - Develop a Streamlit planning dashboard.
 - Deploy a FastAPI scoring service.
 
+## Key Features
+
+- Weekly SKU-level demand forecasting
+- Inventory risk scoring
+- Stockout and overstock prediction
+- Financial impact estimation
+- Replenishment recommendations
+- Interactive dashboard
+- REST API for predictions
+- Downloadable reports
+- Business KPI visualization
+
+
 ## Project Status
 
 | Project Stage | Status |
@@ -41,16 +64,43 @@ Businesses frequently face two inventory problems:
 
 ## Technology Stack
 
+### Programming Language
 - Python 3.11
-- pandas
+
+### Data Analysis & Processing
+- Pandas
 - NumPy
-- scikit-learn
-- matplotlib
+
+### Machine Learning
+- Scikit-learn
+- Joblib (Model Serialization)
+
+### Data Visualization
 - Plotly
+- Matplotlib
+
+### Dashboard
 - Streamlit
+
+### API Development
 - FastAPI
-- Git and GitHub
-  
+- Uvicorn
+
+### Development Environment
+- Jupyter Notebook
+- Visual Studio Code
+
+### Testing
+- Pytest
+
+### Version Control
+- Git
+- GitHub
+
+### Dependency Management
+- pip
+- requirements.txt
+
 
 ## Project Structure
 
@@ -93,6 +143,28 @@ project-foresight/
 ├── requirements.txt
 └── .gitignore
 ```
+## Dashboard Modules
+
+- Executive Dashboard
+- Demand Forecast
+- Inventory Risk Analysis
+- SKU Explorer
+- Financial Impact
+- KPI Summary
+- Downloads
+
+## 📈 Machine Learning Workflow
+
+1. Data Collection
+2. Data Cleaning
+3. Feature Engineering
+4. Model Training
+5. Model Evaluation
+6. Future Forecasting
+7. Risk Scoring
+8. Dashboard Deployment
+9. API Deployment
+
 
 
 ### Week 1 – Data Foundation
@@ -324,14 +396,14 @@ Overstock-risk level
 Priority rank
 
 ## Installation
-### 1. Clone the repository
+ 1. Clone the repository
 git clone https://github.com/SanjaykumarBejjanki/project-foresight
 cd project-foresight
-### 2. Create the virtual environment
+ 2. Create the virtual environment
 python -m venv .venv
-### 3. Activate the environment
+ 3. Activate the environment
 .\.venv\Scripts\Activate.ps1
-### 4. Install dependencies
+ 4. Install dependencies
 python -m pip install -r requirements.txt
 ## Run the Complete Workflow
 Run the commands from the project root.
@@ -352,8 +424,7 @@ python -m src.error_analysis
 python -m src.risk_scoring
 ### Streamlit dashboard
 python -m streamlit run app/dashboard.py
-The local dashboard will normally open at:
-
+The local dashboard will normally open at: 
 http://localhost:8501
 
 ### Testing
@@ -372,6 +443,7 @@ Deployment configuration:
 Repository: kundanad2102-ui/project-foresight
 Branch: main
 Main file: app/dashboard.py
+
 ### Important Limitation
 The current inventory-risk demonstration uses the latest available historical test-period model predictions as an operational weekly-demand proxy.
 
@@ -419,3 +491,21 @@ Check API Health
 | GET	| /score/{sku_id}	| Return saved risk intelligence for a SKU |
 | POST | /score	| Recalculate risk using inventory overrides |
 | GET	| /top-risks	| Return highest-priority inventory risks |
+
+## Team Members
+
+- Bejjanki Sanjay Kumar
+- D. Kundhana
+- Pratikhya Sahoo
+
+---
+
+## License
+
+This project was developed for educational and internship purposes.
+
+---
+
+## Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
