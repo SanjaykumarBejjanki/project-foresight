@@ -325,7 +325,7 @@ Priority rank
 
 ## Installation
 ### 1. Clone the repository
-git clone https://github.com/kundanad2102-ui/project-foresight.git
+git clone https://github.com/SanjaykumarBejjanki/project-foresight
 cd project-foresight
 ### 2. Create the virtual environment
 python -m venv .venv
