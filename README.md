@@ -51,7 +51,7 @@ Businesses frequently face two inventory problems:
 - FastAPI
 - Git and GitHub
   
-## Project Structure
+
 ## Project Structure
 
 ```text
